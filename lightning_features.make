@@ -34,7 +34,7 @@ projects[ckeditor][version] = "1.x-dev"
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][download][type] = "git"
-projects[ckeditor][download][revision] = "875a4b1"
+projects[ckeditor][download][revision] = "b0de255"
 projects[ckeditor][download][branch] = "7.x-1.x"
 ; CKEditor accomodate latest Media changes
 ; http://drupal.org/node/2159403
@@ -65,7 +65,8 @@ projects[context_admin][download][type] = "git"
 projects[context_admin][download][revision] = "15a8390"
 projects[context_admin][download][branch] = "7.x-1.x"
 
-projects[ctools][version] = "1.5"
+projects[ctools][download][type] = "git"
+projects[ctools][download][revision] = "ae66d65"
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 
@@ -73,7 +74,8 @@ projects[date][version] = "2.8"
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 
-projects[demonstratie_panels][version] = "1.x-dev"
+projects[demonstratie_panels][download][type] = "git"
+projects[demonstratie_panels][download][revision] = "f636be3"
 projects[demonstratie_panels][type] = "module"
 projects[demonstratie_panels][subdir] = "contrib"
 
@@ -100,6 +102,7 @@ projects[ember_support][type] = "module"
 projects[ember_support][subdir] = "contrib"
 projects[ember_support][download][type] = "git"
 projects[ember_support][download][branch] = "7.x-1.x"
+projects[ember_support][download][revision] = ca3c084
 
 projects[entity][version] = "1.x-dev"
 projects[entity][type] = "module"
@@ -130,12 +133,8 @@ projects[fape][version] = "1.2"
 projects[fape][type] = "module"
 projects[fape][subdir] = "contrib"
 
-projects[features][version] = "2.x-dev"
-projects[features][type] = "module"
+projects[features][version] = "2.2"
 projects[features][subdir] = "contrib"
-projects[features][download][type] = "git"
-projects[features][download][revision] = "9f4ecc7"
-projects[features][download][branch] = "7.x-2.x"
 
 projects[field_group][version] = "1.x-dev"
 projects[field_group][type] = "module"
@@ -148,14 +147,14 @@ projects[fieldable_panels_panes][version] = "1.x-dev"
 projects[fieldable_panels_panes][type] = "module"
 projects[fieldable_panels_panes][subdir] = "contrib"
 projects[fieldable_panels_panes][download][type] = "git"
-projects[fieldable_panels_panes][download][revision] = "bfef4bc"
+projects[fieldable_panels_panes][download][revision] = "b9628af"
 projects[fieldable_panels_panes][download][branch] = "7.x-1.x"
 
 projects[file_entity][version] = "2.x-dev"
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][download][type] = "git"
-projects[file_entity][download][revision] = "7040fe2"
+projects[file_entity][download][revision] = "609fa9f"
 projects[file_entity][download][branch] = "7.x-2.x"
 
 projects[file_entity_link][version] = "1.0-alpha3"
@@ -178,8 +177,11 @@ projects[iib][version] = "1.x-dev"
 projects[iib][type] = "module"
 projects[iib][subdir] = "contrib"
 projects[iib][download][type] = "git"
-projects[iib][download][revision] = "513fa9d"
+projects[iib][download][revision] = 17a55eb
 projects[iib][download][branch] = "7.x-1.x"
+; Integrate IIB with the Navbar module and improve Toolbar integration
+; http://drupal.org/node/1737036
+projects[iib][patch][1737036] = http://drupal.org/files/issues/iib-navbar-toolbar-1737036-51.patch
 
 projects[jquery_update][version] = "2.4"
 projects[jquery_update][type] = "module"
@@ -189,11 +191,11 @@ projects[libraries][version] = "2.2"
 projects[libraries][type] = "module"
 projects[libraries][subdir] = "contrib"
 
-projects[link][version] = "1.3"
+projects[link][version] = "1.2"
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
 
-projects[linkit][version] = "3.2"
+projects[linkit][version] = "3.1"
 projects[linkit][type] = "module"
 projects[linkit][subdir] = "contrib"
 
@@ -208,14 +210,14 @@ projects[media][version] = "2.x-dev"
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
 projects[media][download][type] = "git"
-projects[media][download][revision] = "247b31f"
+projects[media][download][revision] = "b2ba2da"
 projects[media][download][branch] = "7.x-2.x"
 ; Improve UX for Media Thumbnail and Media Bulk Upload's multiform page 
 ; http://drupal.org/node/2166623
 projects[media][patch][2166623] = "http://drupal.org/files/issues/media_bulk_upload-improve-multiform-2166623-2.patch"
-; Media WYSIWYG broken Quickedit module compatibility
-; http://drupal.org/node/2331293
-projects[media][patch][2331293] = "http://drupal.org/files/issues/media_wysiwyg_quickedit-2331293-8.patch"
+; Media dialog appears underneath the Ctools modal dialog with latest jQuery UI
+; http://drupal.org/node/2272567
+projects[media][patch][2272567] = http://www.drupal.org/files/issues/media-dialog-zindex-2272567-1.patch
 
 projects[media_youtube][version] = "2.x-dev"
 projects[media_youtube][type] = "module"
@@ -229,6 +231,7 @@ projects[media_preview_slider][type] = "module"
 projects[media_preview_slider][subdir] = "contrib"
 projects[media_preview_slider][download][type] = "git"
 projects[media_preview_slider][download][branch] = "7.x-1.x"
+projects[media_preview_slider][download][revision] = 3676e33
 projects[media_preview_slider][download][url] = "http://git.drupal.org/sandbox/Brian14/2222597.git"
 
 projects[module_filter][version] = "2.0-alpha2"
@@ -239,7 +242,7 @@ projects[multiform][version] = "1.1"
 projects[multiform][type] = "module"
 projects[multiform][subdir] = "contrib"
 
-projects[metatag][version] = "1.4"
+projects[metatag][version] = 1.0-rc2
 projects[metatag][type] = "module"
 projects[metatag][subdir] = "contrib"
 
@@ -247,7 +250,7 @@ projects[navbar][version] = "1.x-dev"
 projects[navbar][type] = "module"
 projects[navbar][subdir] = "contrib"
 projects[navbar][download][type] = "git"
-projects[navbar][download][revision] = "3c5a242"
+projects[navbar][download][revision] = "bd3389b"
 projects[navbar][download][branch] = "7.x-1.x"
 ; Menu icons for contrib modules
 ; http://drupal.org/node/1954912
@@ -293,6 +296,9 @@ projects[panels][subdir] = "contrib"
 projects[panels][download][type] = "git"
 projects[panels][download][revision] = "bcda4a6"
 projects[panels][download][branch] = "7.x-3.x"
+; Add support for defining styles per panels pane subtype.
+; https://www.drupal.org/node/2320045
+projects[panels][patch][2320045] = https://www.drupal.org/files/issues/panels-style-plugin-type-subtype-2320045-10.patch
 
 projects[panopoly_magic][version] = "1.x-dev"
 projects[panopoly_magic][type] = "module"
@@ -318,7 +324,7 @@ projects[picture][download][type] = "git"
 projects[picture][download][revision] = "3d9fe6c"
 projects[picture][download][branch] = "7.x-1.x"
 
-projects[plupload][version] = "1.7"
+projects[plupload][version] = "1.6"
 projects[plupload][type] = "module"
 projects[plupload][subdir] = "contrib"
 
@@ -329,7 +335,7 @@ projects[quickedit][download][type] = "git"
 projects[quickedit][download][revision] = "28a314d"
 projects[quickedit][download][branch] = "7.x-1.x"
 
-projects[quickedit_tab][version] = "1.x-dev"
+projects[quickedit_tab][version] = 1.1
 projects[quickedit_tab][type] = "module"
 projects[quickedit_tab][subdir] = "contrib"
 
@@ -401,10 +407,10 @@ projects[views][version] = "3.x-dev"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 projects[views][download][type] = "git"
-projects[views][download][revision] = "82634af"
+projects[views][download][revision] = "d7bc9f9"
 projects[views][download][branch] = "7.x-3.x"
 
-projects[views_autocomplete_filters][version] = "1.1"
+projects[views_autocomplete_filters][version] = 1.0-beta2
 projects[views_autocomplete_filters][type] = "module"
 projects[views_autocomplete_filters][subdir] = "contrib"
 
@@ -412,21 +418,18 @@ projects[views_field_view][version] = "1.x-dev"
 projects[views_field_view][type] = "module"
 projects[views_field_view][subdir] = "contrib"
 projects[views_field_view][download][type] = "git"
-projects[views_field_view][download][revision] = "bb6cfea"
+projects[views_field_view][download][revision] = db93080
 projects[views_field_view][download][branch] = "7.x-1.x"
 
-projects[views_bulk_operations][version] = "3.x-dev"
+projects[views_bulk_operations][version] = 3.2
 projects[views_bulk_operations][type] = "module"
 projects[views_bulk_operations][subdir] = "contrib"
-projects[views_bulk_operations][download][type] = "git"
-projects[views_bulk_operations][download][revision] = "3e27b0b"
-projects[views_bulk_operations][download][branch] = "7.x-3.x"
 
-projects[views_load_more][version] = "1.5"
+projects[views_load_more][version] = 1.1
 projects[views_load_more][type] = "module"
 projects[views_load_more][subdir] = "contrib"
 
-projects[webform][version] = "4.1"
+projects[webform][version] = 4.0-rc5
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
@@ -445,20 +448,17 @@ projects[workbench_moderation][download][revision] = "b38ac3e"
 projects[workbench_moderation][download][branch] = "7.x-1.x"
 ; Panelizer is incompatible with moderation
 ; http://www.drupal.org/node/1402860
-projects[workbench_moderation][patch][1402860] = "http://drupal.org/files/issues/workbench_moderation-panelizer_revisions-1402860-59.patch"
+projects[workbench_moderation][patch][1402860] = http://drupal.org/files/issues/workbench_moderation-panelizer_revisions-1402860-44_0.patch
 
 projects[workbench_moderation_buttons][version] = "1.x-dev"
 projects[workbench_moderation_buttons][type] = "module"
 projects[workbench_moderation_buttons][subdir] = "contrib"
 projects[workbench_moderation_buttons][download][type] = "git"
-projects[workbench_moderation_buttons][download][revision] = "4a488f7"
+projects[workbench_moderation_buttons][download][revision] = 5ee2a30
 projects[workbench_moderation_buttons][download][branch] = "7.x-1.x"
-; PHP Parse error: syntax error, unexpected '$key'
-; http://drupal.org/node/2353111
-projects[workbench_moderation_buttons][patch][2353111] = "http://drupal.org/files/issues/workbench_moderation_buttons-PHP_parse-2353111-1.patch"
-; Form always thinks current state is "draft"
-; http://drupal.org/node/2365863
-projects[workbench_moderation_buttons][patch][2365863] = "http://drupal.org/files/issues/workbench_moderation_buttons-default_state-2365863-1.patch"
+; Remove Current State button, change Save button to show current state value
+; http://drupal.org/node/2338863
+projects[workbench_moderation_buttons][patch][2338863] = http://drupal.org/files/issues/workbench-moderation-buttons-2338863-4.patch
 
 projects[workbench_moderation_notes][version] = "1.x-dev"
 projects[workbench_moderation_notes][type] = "module"
@@ -466,9 +466,6 @@ projects[workbench_moderation_notes][subdir] = "contrib"
 projects[workbench_moderation_notes][download][type] = "git"
 projects[workbench_moderation_notes][download][revision] = "8e5e6f4"
 projects[workbench_moderation_notes][download][branch] = "7.x-1.x"
-; Incorrect status message "...no published revision of this site"
-; http://drupal.org/node/2045407
-projects[workbench_moderation_notes][patch][] = "http://drupal.org/files/workbench_moderation_notes-no_live_node_alert-2045407-1.patch"
 
 projects[xautoload][version] = "4.5"
 projects[xautoload][type] = "module"
@@ -480,9 +477,11 @@ libraries[backbone][download][url] = "https://github.com/jashkenas/backbone/arch
 
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor%20for%20Drupal/edit/ckeditor_4.4.3_edit.zip"
+; Add a style to the CKEditor skin that shows astrisks next to required fields.
+libraries[ckeditor][patch][2377763] = https://www.drupal.org/files/issues/ckeditor-asterisk-for-required-fields.patch
 
 libraries[colorbox][download][type] = "get"
-libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.x.zip"
+libraries[colorbox][download][url] = https://github.com/jackmoore/colorbox/archive/1.5.13.zip
 
 libraries[jsonpath][download][type] = "get"
 libraries[jsonpath][download][url] = "https://jsonpath.googlecode.com/files/jsonpath-0.8.1.php"
